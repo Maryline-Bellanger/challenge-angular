@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a, app-icon-shop {
+  color: royalblue;
+}

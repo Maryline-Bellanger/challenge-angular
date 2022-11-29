@@ -1,0 +1,6 @@
+<button type="button" class="btn btn-primary" (click)="onAdd()" [disabled]="compteur == 5">Ajouter</button>
+<button type="button" class="btn btn-danger" (click)="onDelete()" [disabled]="compteur < 1">Supprimer</button>
+
+<p *ngIf="compteur === 0">Votre panier est vide.</p>
+<p *ngIf="compteur === 1">Vous avez {{compteur}} produit dans votre panier.</p>
+<p *ngIf="compteur > 1" [ngClass]="{'red' : compteur >= 5}">Vous avez {{compteur}} produits dans votre panier.</p>
